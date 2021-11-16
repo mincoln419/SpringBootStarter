@@ -1,0 +1,4 @@
+=================================
+Sping~~~~ ${spring-boot.version}
+app.version ~~~ ${application.version}
+=================================
