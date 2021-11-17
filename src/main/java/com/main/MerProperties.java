@@ -3,7 +3,6 @@ package com.main;
 import java.time.Duration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
@@ -12,12 +11,11 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 public class MerProperties {
 
-	@NonNull
+
 	private String name;
 	private int age;
 	private String fullName;
 	private Duration sessionTimeout = Duration.ofSeconds(30);
-	
 	
 	
 	public String getName() {
