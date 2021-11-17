@@ -5,17 +5,19 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import com.configure.Holoman;
-
 @Component
 public class HolomanRunner implements ApplicationRunner{
 
 	@Autowired
-	Holoman holoman;
+	MerProperties mer;
+	
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		System.out.println(holoman.toString());
 		
+		System.out.println(mer.getName());
+		System.out.println(mer.getAge());
+		System.out.println(mer.getFullName());
+		System.out.println(mer.getSessionTimeout());
 	}
 }

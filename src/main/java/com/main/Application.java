@@ -15,7 +15,7 @@ public class Application {
 
 		return "HELLO Spring";
 	}
-
+	
 	public static void main(String[] args) {
 		SpringApplication app = new  SpringApplication(Application.class);
 		app.addListeners(new SampleListenser());//bean등록 할 필요가 없음.
@@ -26,7 +26,6 @@ public class Application {
 		 * sevlet이 없고 web-plugs 있으면 reactive
 		 * 둘다 없으면 none
 		 * */
-		
 		app.run(args);
 	}
 
