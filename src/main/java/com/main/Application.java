@@ -13,14 +13,13 @@ public class Application {
 	@GetMapping("/hello")
 	public String hello() {
 
-		return "HELLO Spring";
+		return "Say yo";
 	}
 	
 	public static void main(String[] args) {
 		SpringApplication app = new  SpringApplication(Application.class);
 		app.addListeners(new SampleListenser());//bean등록 할 필요가 없음.
-		
-		app.setWebApplicationType(WebApplicationType.NONE);
+		app.setWebApplicationType(WebApplicationType.SERVLET);
 		/* 
 		 * 기본적으로 servlet
 		 * sevlet이 없고 web-plugs 있으면 reactive
